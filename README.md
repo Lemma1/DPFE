@@ -6,13 +6,14 @@ By Wei Ma, Civil and environmental engineering, Carnegie Mellon University.
 
 ### Requirements
 
-- Python 2.7
+- Python 2.7.13
 - PyTorch 0.2.0_3
 - Numpy 1.13.3
 - Scipy 0.19.1
 - NetworkX 1.11
-- Pickle
+- pickle
 - joblib 0.11
+- pandas 0.18.1
 
 ### Instructions
 
