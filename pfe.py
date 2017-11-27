@@ -3,12 +3,12 @@ import numpy as np
 
 def get_gradient(A, y, x):
     (n ,d) = A.size()
-    tmp = y - torch.mm(A, x.view(d, -1))
-    return - torch.mm(A.t(), tmp.view(n, -1)) / np.float(n)
+    tmp = y.view(n, -1) - torch.mm(A, x.view(d, -1))
+    return - torch.mm(A.t(), tmp) / np.float(n)
 
 def get_loss(A, y, x):
     (n ,d) = A.size()
-    return torch.sum(torch.pow(y - torch.mm(A, x.view(d, -1)), 2))
+    return torch.sum(torch.pow(y.view(n, -1) - torch.mm(A, x.view(d, -1)), 2))
 
 def nnls(A, y, num_epoch, batch_size, learning_rate, adagrad = False, 
              use_GPU = False, D_vec = None, D_vec_weight = 0.1, verbose = False):
@@ -27,11 +27,13 @@ def nnls(A, y, num_epoch, batch_size, learning_rate, adagrad = False,
         if D_vec is not None:
             D_vec_torch = D_vec_torch.cuda()
     for epoch in range(num_epoch):
+        print epoch
         if adagrad:
             sum_g_square = 0
-        if verbose: print "Epoch:", epoch
-        loss = get_loss(A_torch, y_torch, x_torch)
-        if verbose: print "Current loss is:", loss
+        if verbose: 
+            print "Epoch:", epoch
+            loss = get_loss(A_torch, y_torch, x_torch) 
+            print "Current loss is:", loss
         seq = np.random.permutation(n)
         train_sample_list = np.array_split(seq, len(seq) / batch_size)
         for sample_ind in train_sample_list:
