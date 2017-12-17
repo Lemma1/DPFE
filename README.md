@@ -39,7 +39,7 @@ Please clone the whole repo, and run DPFE-v0.1.ipynb using jupyter notebook.
 
 ### Data
 
-Since the traffic data and count data are under the non-discloure agreement, please contact the authors to obtain the data.
+Since the traffic speed data (link_spd_data.pickle) and count data (link_count_data.pickle) are under the non-discloure agreement, please contact the authors to obtain the data.
 
 
 For any questions, please contact Lemma171@gmail.com
