@@ -1,7 +1,7 @@
-## Estimating 24/7 origin-destination demand using high granularity multi-source traffic data
+## Estimating 24/7 origin-destination demand using high granular multi-source traffic data
 
 
-By Wei Ma, Civil and environmental engineering, Carnegie Mellon University. 
+Implemented by Wei Ma, advised by Sean Qian, Civil and environmental engineering, Carnegie Mellon University. 
 
 
 ### Requirements
