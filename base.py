@@ -244,7 +244,7 @@ def get_P(N, spd_data, analysis_start_time, time_interval, tmp_date, path_list, 
     #         print (O,D)
             cost_list = list()
             for path in paths:
-                arrival_time = get_full_arrival_time(start_time, path.link_list, spd_data, tmp_date, link_dict)
+                arrival_time = get_full_arrival_time(start_time, path.link_list, spd_data, tmp_date, None)
                 cost = (datetime.datetime.combine(tmp_date, arrival_time) - datetime.datetime.combine(tmp_date, start_time)).total_seconds()
                 path.cost = cost
                 cost_list.append(cost)
