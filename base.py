@@ -233,6 +233,7 @@ def get_full_arrival_time(start_time, link_list, spd_data, tmp_date, link_dict, 
 # tmp_date = datetime.date(2014, 1, 1)
 def get_P(N, spd_data, analysis_start_time, time_interval, tmp_date, path_list, OD_paths):
     num_path_v = [len(x) for x in OD_paths.itervalues()]
+    num_path = np.sum(num_path_v)
     OD_list = list(OD_paths.keys())
     num_OD = len(OD_list)
     row_list = list()
