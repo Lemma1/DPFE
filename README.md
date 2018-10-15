@@ -38,7 +38,7 @@ Please clone the whole repo, and run DPFE-v0.1.ipynb using jupyter notebook.
 
 
 ### Paper
-[Estimating multi-year 24/7 origin-destination demand using high-granular multi-source traffic data]: https://www.sciencedirect.com/science/article/pii/S0968090X18302948
+[Estimating multi-year 24/7 origin-destination demand using high-granular multi-source traffic data](https://www.sciencedirect.com/science/article/pii/S0968090X18302948)
 
 ### Data
 
