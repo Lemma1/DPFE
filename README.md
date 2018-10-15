@@ -37,6 +37,9 @@ Please clone the whole repo, and run DPFE-v0.1.ipynb using jupyter notebook.
 - DPFE-v0.1.ipynb: main script, start from here
 
 
+### Paper
+[Estimating multi-year 24/7 origin-destination demand using high-granular multi-source traffic data]: https://www.sciencedirect.com/science/article/pii/S0968090X18302948
+
 ### Data
 
 Since the traffic speed data (link_spd_data.pickle) and count data (link_count_data.pickle) are under the non-discloure agreement, please contact the authors to obtain the data.
